@@ -1,6 +1,6 @@
-#Add your name here
-#Add the date here
-#Add the filename here
+#Ada Okike
+#17/02/2025
+#perfectNumber.py
 
 #A perfect number is one for which all the divisors of the number add up to the
 #number itself. For example the divisors of 28 are 1,2,4,7,14 which added together gives 28
@@ -8,9 +8,17 @@
 #The function should return True if the number is perfect and False if it is not
 
 #from divisors import divisors
+from divisors import divisors
 
 
 #define the function header called perfectNumber expecting one argument
+def perfectNumber(x):
+    result = True
+
+    if sum(divisors(x)) == x:
+        results = True
+
+    return result
 
 
     #set a result variable to False by default
